@@ -3,7 +3,6 @@ FROM node:latest-slim
 MAINTAINER iCyMind <icyminnd@gmail.com>
 
 RUN npm install --global gitbook-cli &&\
-        gitbook fetch lasest &&\
         npm cache clear &&\
         rm -rf /tmp/*
 
