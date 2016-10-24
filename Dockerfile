@@ -1,4 +1,4 @@
-FROM node:latest-slim
+FROM node:slim
 
 MAINTAINER iCyMind <icyminnd@gmail.com>
 
