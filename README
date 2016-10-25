@@ -8,6 +8,13 @@ docker run --rm -v "$PWD:/gitbook" -p 80:4000 icymind/gitbook gitbook init
 docker run --rm -v "$PWD:/gitbook" -p 80:4000 icymind/gitbook gitbook serve
 # build
 docker run --rm -v "$PWD:/gitbook" -p 80:4000 icymind/gitbook gitbook build
+
+4000 – GitBook default service port.
+
+35729 – Live reload server port.
+/gitbook – Default working directory for GitBook container.
+
+
 For short, you can use alias for the long command line text. Place the alias statement in your .bashrc or .zshrc.
 
 alias gitbook='docker run --rm -v "$PWD":/gitbook -p 80:4000 icymind/gitbook gitbook'
